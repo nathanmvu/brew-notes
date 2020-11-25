@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "V60",
+    "image": "https://cdn.iconscout.com/icon/premium/png-256-thumb/coffee-equipment-poorover-hario-v60-filter-drink-cup-61210.png",
+    "description": "",
+    "instructions": ""
+  },
+  {
+    "id": "2",
+    "name": "Chemex",
+    "image": "https://cdn1.iconfinder.com/data/icons/coffee-equipment/100/coffee_equipment-01-512.png",
+    "description": "",
+    "instructions": ""
+  },
+  {
+    "id": "3",
+    "name": "Aeropress",
+    "image": "https://static.thenounproject.com/png/929983-200.png",
+    "description": "",
+    "instructions": ""
+  },
+  {
+    "id": "4",
+    "name": "Kalita Wave",
+    "image": "https://static.thenounproject.com/png/929983-200.png",
+    "description": "",
+    "instructions": ""
+  },
+  {
+    "id": "5",
+    "name": "French Press",
+    "image": "https://cdn.iconscout.com/icon/premium/png-512-thumb/french-press-1429531-1210085.png",
+    "description": "",
+    "instructions": ""
+  },
+  {
+    "id": "6",
+    "name": "Clever Dripper",
+    "image": "https://dxkmbl8uwuv9p.cloudfront.net/sightglass-coffee-store/1541222863872/55ca57ed-c52e-4db4-94bb-393175b562c8/clever@1x-61d173e841fe7f0e05daf2bf7a2e1f4e.png",
+    "description": "",
+    "instructions": ""
+  }
+]
