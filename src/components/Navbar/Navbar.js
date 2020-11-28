@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import './Navbar.css';
 
 function Navbar() {
   return (
     <nav class="navbar navbar-expand-md navbar-light">
       <h1>
-        <a id='nameBadge' class="navbar-brand ml-5" href={(process.env.PUBLIC_URL || '/') + '/'}>BrewNotes</a>
+        <a id='nameBadge' class="navbar-brand ml-5" href={(process.env.PUBLIC_URL || '/') + '/'}>BrewNotes☕</a>
       </h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

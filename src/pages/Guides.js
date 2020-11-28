@@ -1,5 +1,5 @@
 import React from 'react';
-import Cards from './components/Cards/Cards';
+import Cards from '../components/Cards/Cards.js';
 
 function Guides() {
   return (

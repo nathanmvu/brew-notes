@@ -2,42 +2,63 @@
   {
     "id": "1",
     "name": "V60",
-    "image": "https://cdn.iconscout.com/icon/premium/png-256-thumb/coffee-equipment-poorover-hario-v60-filter-drink-cup-61210.png",
+    "image": "https://www.seattlecoffeegear.com/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/7/5/75025_xxx_v1.jpg",
     "description": "",
     "instructions": ""
   },
   {
     "id": "2",
     "name": "Chemex",
-    "image": "https://cdn1.iconfinder.com/data/icons/coffee-equipment/100/coffee_equipment-01-512.png",
+    "image": "https://essense.coffee/wp-content/uploads/2019/07/CHEMEX-six-classic_04.jpg",
     "description": "",
     "instructions": ""
   },
   {
     "id": "3",
     "name": "Aeropress",
-    "image": "https://static.thenounproject.com/png/929983-200.png",
+    "image": "https://images.crateandbarrel.com/is/image/Crate/AeropressCoffeeMakerROF16",
     "description": "",
     "instructions": ""
   },
   {
     "id": "4",
     "name": "Kalita Wave",
-    "image": "https://static.thenounproject.com/png/929983-200.png",
+    "image": "https://cdn.shopify.com/s/files/1/0635/8741/products/Kalita_Wave_Kettle_Dripper_2048x_249e2b11-ddc6-481e-956b-59ef262e3a88_1024x1024.jpeg?v=1532971619",
     "description": "",
     "instructions": ""
   },
   {
     "id": "5",
     "name": "French Press",
-    "image": "https://cdn.iconscout.com/icon/premium/png-512-thumb/french-press-1429531-1210085.png",
+    "image": "https://fitfoodiefinds.com/wp-content/uploads/2019/05/french-press-6-sq.jpg",
     "description": "",
     "instructions": ""
   },
   {
     "id": "6",
     "name": "Clever Dripper",
-    "image": "https://dxkmbl8uwuv9p.cloudfront.net/sightglass-coffee-store/1541222863872/55ca57ed-c52e-4db4-94bb-393175b562c8/clever@1x-61d173e841fe7f0e05daf2bf7a2e1f4e.png",
+    "image": "https://essense.coffee/wp-content/uploads/2020/03/Klever1.jpg",
+    "description": "",
+    "instructions": ""
+  },
+  {
+    "id": "7",
+    "name": "Cold Brew",
+    "image": "https://coolhunting.com/wp-content/uploads/2018/06/large-40-1200x1200.jpg",
+    "description": "",
+    "instructions": ""
+  },
+  {
+    "id": "8",
+    "name": "Siphon",
+    "image": "https://cdn11.bigcommerce.com/s-6h7ychjk4/images/stencil/1280x1280/products/8411/90399/hario-tabletop-coffee-siphon__95640.1597184239.jpg?c=1&imbypass=on",
+    "description": "",
+    "instructions": ""
+  },
+  {
+    "id": "9",
+    "name": "Moka Pot",
+    "image": "https://cdn.shopify.com/s/files/1/0734/9587/files/brew-moka-pot_grande.jpg?6204",
     "description": "",
     "instructions": ""
   }
