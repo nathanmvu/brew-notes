@@ -4,14 +4,14 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
 import Guides from './pages/Guides';
-import Notes from './pages/Notes';
+import Notes from './pages/Notes/Notes';
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Switch>
-        <Route exact path={(process.env.PUBLIC_URL || '/') + '/'} component={Home} />
+        <Route exact path={(process.env.PUBLIC_URL || '/') + '/'} component={Notes} />
         <Route exact path={(process.env.PUBLIC_URL || '/') + '/notes'} component={Notes} />
       </Switch>
     </Router>

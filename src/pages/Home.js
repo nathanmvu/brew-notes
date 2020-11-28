@@ -3,10 +3,12 @@ import './style.css';
 
 function Guides() {
   return (
-    <div className='container text-center'>
+    <div className='container text-center center'>
       <h1>Hello,</h1>
       <br></br>
       <h1>Welcome to BrewNotes! ☕</h1>
+      <br></br>
+      <h2>This website is a resource for coffee brewing methods and a place where coffee enthusiasts can log information about their brews.</h2>
     </div>
   )
 }
