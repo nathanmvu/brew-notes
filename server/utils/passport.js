@@ -2,6 +2,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var User = require('../models/User');
 
+console.log('in passport');
 passport.use(
   new LocalStrategy(
     {
@@ -12,17 +13,20 @@ passport.use(
         where: {
           email: email,
         },
-      }).then(function (userDB) {
-        if (!userDB) {
+      }).then(function (err, user) {
+        if (err) {
+          return done(err)
+        }
+        if (!user) {
           return done(null, false, {
             message: 'Invalid email.',
           });
-        } else if (!userDB.validPassword(password)) {
+        } else if (!user.validPassword(password)) {
           return done(null, false, {
             message: 'Invalid password.',
           });
         }
-        return done(null, userDB);
+        return done(null, user);
       });
     }
   )
@@ -35,4 +39,4 @@ passport.deserializeUser(function (obj, cb) {
   cb(null, obj);
 });
 
-module.exports = { passport };
+module.exports = passport;

@@ -55,10 +55,6 @@ h2 {
   animation-duration: 5s;
 }
 
-.container {
-  position: relative;
-}
-
 .center {
   margin: 0;
   position: absolute;

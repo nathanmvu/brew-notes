@@ -8,7 +8,7 @@ function Cards() {
       <div className="d-flex justify-content-center">
         <h3>Popular Brew Methods</h3>
       </div>
-      <div classNameName='row'>
+      <div className='row'>
         {methods.map(method => 
         <div key={method.id} className="card-deck">
           <div className='card'>

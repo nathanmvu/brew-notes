@@ -6,19 +6,21 @@ function Signup() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const isPasswordValid = password.length && password.length < 6;
+  const isPasswordInvalid = password.length && password.length < 6;
 
   function handleClick() {
-    if (isPasswordValid) {
+    if (!isPasswordInvalid) {
       // send a POST to /api/login with email & password as the body
-      console.log('login', email, password);
+      console.log('signup', email, password);
       const user = {
         email: email,
         password: password
       }
-      axios.post('/api/signup', user)
+      axios.post('/api/user', user)
         .then(res => console.log(res))
         .catch(err => console.log(err));
+    } else {
+      alert('Password is invalid');
     }
   };
 
@@ -40,19 +42,18 @@ function Signup() {
         <div className='form-group'>
           <h4>Password</h4>
           <input 
-            className={`input form-control ${isPasswordValid ? 'text-danger' : ''}`} 
+            className={`input form-control ${isPasswordInvalid ? 'text-danger' : ''}`} 
             type="password" placeholder="Enter password"
+            autoComplete='off'
             value={password} 
-            onChange={(e) => setPassword(e.target.value)} 
+            onChange={(e) => setPassword(e.target.value)}
           />
-          {isPasswordValid ? 
+          {isPasswordInvalid ? 
           <i className='text-danger'>minimum 6 chars</i> 
           : null}
         </div>
-        <div className='d-flex justify-content-center'>
-          <button type='button' className="btn btn-light signUpButton" onClick={handleClick}>Sign up</button>
-          <p className='ml-2'>or log in <a href='/login'>here</a></p>
-        </div>
+        <button type='button' className="btn btn-light" onClick={handleClick}>Sign up</button>
+        <p className='ml-2'>or log in <a href='/login'>here</a></p>
       </form>
     </div>
   )
