@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-function Guides() {
+function Home() {
   return (
     <div className='container text-center center'>
       <h1>Hello,</h1>
@@ -13,4 +13,4 @@ function Guides() {
   )
 }
 
-export default Guides;
+export default Home;

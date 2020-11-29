@@ -4,28 +4,35 @@ import './Navbar.css';
 
 function Navbar() {
   return (
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav className="navbar navbar-expand-md navbar-light">
       <h1>
-        <a id='nameBadge' class="navbar-brand ml-5" href={(process.env.PUBLIC_URL || '/') + '/'}>BrewNotes☕</a>
+        <Link to = {'/'} id='nameBadge' className="navbar-brand ml-5">
+          BrewNotes☕
+        </Link>
       </h1>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <Link to = {(process.env.PUBLIC_URL || '/') + '/'}>
-              <a class="nav-link" href='/'>Guides</a>
+      <div className="collapse navbar-collapse justify-content-end">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <Link to = {'/guides'} className="nav-link">
+              Guides
             </Link>
           </li>
-          <li class="nav-item">
-            <Link to = {(process.env.PUBLIC_URL || '/') + '/notes'}>
-              <a class="nav-link" href='/'>Notes</a>
+          <li className="nav-item">
+            <Link to = {'/notes'} className="nav-link">
+              Notes
             </Link>
           </li>
-          <li class="nav-item">
-            <Link to = {(process.env.PUBLIC_URL || '/') + '/contact'}>
-              <a class="nav-link" href='/'>Sign Out</a>
+          <li className="nav-item">
+            <Link to = {'/favorites'} className="nav-link" >
+              Favorites
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to = {'/contact'} className="nav-link">
+              Sign Out
             </Link>
           </li>
         </ul>
