@@ -1,4 +1,4 @@
-db = require('../models');
+const User = require('../models/User');
 var passport = require('passport');
 require('../utils/passport.js');
 
@@ -14,7 +14,7 @@ module.exports = function (app) {
 
   app.post('/api/signup', function (req, res) {
     console.log('signup', req.body);
-    db.User.create({
+    User.create({
       email: req.body.email,
       password: req.body.password,
     }).then(function () {
@@ -23,8 +23,10 @@ module.exports = function (app) {
   });
 
   app.get('/logout', function (req, res) {
-    req.logout();
-    res.redirect('/');
+    if (req.user) {
+      req.logout();
+      res.redirect('/');
+    }
   });
 
   app.get('/api/userData', function (req, res) {

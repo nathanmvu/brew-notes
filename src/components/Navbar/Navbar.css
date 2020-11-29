@@ -1,6 +1,9 @@
 #nameBadge {
   font-size: 32px;
-  color: #6f4e37;
+}
+
+.navbar {
+  background-color: #6f4e37;
 }
 
 .nav-link {

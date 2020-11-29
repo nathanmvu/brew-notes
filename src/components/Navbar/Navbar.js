@@ -4,9 +4,9 @@ import './Navbar.css';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-md navbar-light">
+    <nav className="navbar navbar-expand-md navbar-dark">
       <h1>
-        <Link to = {'/'} id='nameBadge' className="navbar-brand ml-5">
+        <Link to = {'/'} id='nameBadge' className="navbar-brand ml-5 text-light">
           BrewNotes☕
         </Link>
       </h1>
