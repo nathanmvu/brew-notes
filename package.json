@@ -2,11 +2,13 @@
   "name": "brew-notes",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.0",
+    "concurrently": "^5.3.0",
     "express": "^4.17.1",
     "mongoose": "^5.10.17",
     "passport": "^0.4.1",
@@ -17,6 +19,7 @@
     "react-scripts": "4.0.1"
   },
   "scripts": {
+    "temp": "if-env NODE_ENV=production && npm run start:dev",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

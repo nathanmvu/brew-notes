@@ -3,6 +3,8 @@ var passport = require('passport');
 require('../utils/passport.js');
 
 module.exports = function (app) {
+  console.log('in userapiroutes');
+
   app.post('/api/login',
     passport.authenticate('local', {
       successRedirect: '/home',
@@ -11,6 +13,7 @@ module.exports = function (app) {
   );
 
   app.post('/api/signup', function (req, res) {
+    console.log('signup', req.body);
     db.User.create({
       email: req.body.email,
       password: req.body.password,
@@ -21,7 +24,6 @@ module.exports = function (app) {
 
   app.get('/logout', function (req, res) {
     req.logout();
-
     res.redirect('/');
   });
 

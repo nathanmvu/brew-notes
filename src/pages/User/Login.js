@@ -8,8 +8,17 @@ function Login() {
   const isPasswordValid = password.length && password.length < 6;
 
   function handleClick() {
-    // send a POST to /api/login with email & password as the body
-    console.log('login', email, password);
+    if (isPasswordValid) {
+      // send a POST to /api/login with email & password as the body
+      console.log('login', email, password);
+      const user = {
+        email: email,
+        password: password
+      }
+      axios.post('/api/login', { user })
+        .then(res => console.log(res))
+        .catch(err => console.log(err));
+    }
   };
 
   return (
