@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import API from '../../utils/API';
+import './NoteModal.css';
 // import Form from '../../components/Form/Form';
 
 function Notes(props) {
@@ -71,7 +72,8 @@ function Notes(props) {
     closeModal();
   }
 
-  return (
+  return (<>
+    {isOpen ? <div className="modal-backdrop show"></div> : null}
     <div className="modal" style={isOpen ? {display: 'block'} : {}} id="formModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div className="modal-dialog modal-dialog-centered" role="document">
         <div className="modal-content">
@@ -135,6 +137,7 @@ function Notes(props) {
         </div>
       </div>
     </div>
+  </>
   );
 
   // const noteModal = (

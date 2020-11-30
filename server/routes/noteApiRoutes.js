@@ -74,4 +74,19 @@ module.exports = function (app) {
       res.send({ error: 'no user' });
     }
   });
+
+  // favorite notes
+  app.get('/api/user/favoritenotes', function (req, res) {
+    if (req.user) {
+      Notes.find({ userID: req.user._id, favorite: true }, function(err, data) {
+        if (err) {
+          res.send({ error: err });
+        } else {
+          res.send({ notes: data || [] });
+        }
+      });
+    } else {
+      res.send({ error: 'no user' });
+    }
+  });
 };

@@ -47,6 +47,9 @@ function App() {
         <Route exact path='/home' component={Home} />
         <Route exact path='/guides' component={Guides} />
         <Route exact path='/notes' component={Notes} userID={userID} />
+        <Route exact path='/favorites' render={() => (
+          <Notes favoritesPage={true} />
+        )} />
       </Switch>
     </Router>
   );

@@ -2,16 +2,19 @@ import axios from 'axios'
 
 export default {
     saveNote: function(note) {
-      return axios.post("/api/user/notes", note)
+        return axios.post("/api/user/notes", note)
     },
     updateNote: function(id, update) {
-      return axios.put("/api/user/notes/" + id, update)
+        return axios.put("/api/user/notes/" + id, update)
     },
     deleteNote: function(id) {
-      return axios.delete("/api/user/notes/" + id)
+        return axios.delete("/api/user/notes/" + id)
     },
-    getAllNotes: function() {
-      return axios.get("/api/user/notes")
+    getAllNotes: function(favoritesPage) {
+        if (favoritesPage) {
+            return axios.get("/api/user/favoritenotes")
+        }
+        return axios.get("/api/user/notes")
     }
 }
 
