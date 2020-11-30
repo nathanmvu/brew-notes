@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
-import { Modal, Button } from 'react-bootstrap';
 import methods from  '../../methods.json';
-import './Cards.css'
+import './Cards.css';
+import CardModal from '../CardModal/CardModal';
 
 function Cards() {
   const [modalProps, setModalProps] = useState({
     card: null
   });
+
+  const [modalShow, setModalShow] = React.useState(false);
   
   function showCard(card) {
     console.log('clicked guide', card);
+    setModalShow(true)
     setModalProps({
       card
     });
@@ -23,7 +26,7 @@ function Cards() {
       <div className='row d-flex justify-content-center'>
         {methods.map(method => 
         <div key={method.id} className="card-deck">
-          <div className='card' onClick={() => showCard(method.name)}>
+          <div className='card' onClick={() => showCard(method)}>
             <img src={method.image} className="card-img-top" alt={method.name} />
             <div className="card-body">
               <h5 className="card-title">{method.name}</h5>
@@ -32,6 +35,11 @@ function Cards() {
         </div>
         )}
       </div>
+      <CardModal 
+        {...modalProps}
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
     </div>
   )
 }

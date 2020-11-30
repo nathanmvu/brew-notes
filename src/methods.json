@@ -3,49 +3,85 @@
     "id": "1",
     "name": "V60",
     "image": "https://www.seattlecoffeegear.com/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/7/5/75025_xxx_v1.jpg",
-    "description": "",
-    "instructions": ""
+    "description": "Cone-shaped brewer",
+    "instructions": ["1. Heat up 300g of water to 198°F",
+                     "2. Coarsely grind 20g of coffee beans",
+                     "3. (45sec) Pour 50g of water onto the ground and let bloom.",
+                     "4. (0:45) Pour 70g of water onto the grounds.",
+                     "5. (1:30) Pour 60g of water onto the grounds.",
+                     "6. (2:15) Pour 60g of water onto the grounds.",
+                     "7. (3:30) Finished. Take coffee dripper off of cup."],
+    "source": "Tetsu Kasuya's 4:6 Method"
+                     
   },
   {
     "id": "2",
     "name": "Chemex",
     "image": "https://essense.coffee/wp-content/uploads/2019/07/CHEMEX-six-classic_04.jpg",
-    "description": "",
-    "instructions": ""
+    "description": "Cone-shaped brewer",
+    "instructions": ["1. Heat up 300g of water to 198°F",
+                    "2. Coarsely grind 20g of coffee beans",
+                    "3. (45sec) Pour 50g of water onto the ground and let bloom.",
+                    "4. (0:45) Pour 70g of water onto the grounds.",
+                    "5. (1:30) Pour 60g of water onto the grounds.",
+                    "6. (2:15) Pour 60g of water onto the grounds.",
+                    "7. (3:30) Finished. Take coffee dripper off of cup."],
+    "source": "Reddit"
   },
   {
     "id": "3",
     "name": "Aeropress",
     "image": "https://images.crateandbarrel.com/is/image/Crate/AeropressCoffeeMakerROF16",
-    "description": "",
-    "instructions": ""
+    "description": "Immersion brewer",
+    "instructions": ["(Inverted Method)",
+                    "1. Heat up 300g of water to 198°F",
+                    "2. Coarsely grind 20g of coffee beans",
+                    "3. (30sec) Pour 50g of water onto grounds and stir with paddle 5 times.",
+                    "4. (0:30) Pour 150g of water onto the grounds and stir for 15 seconds.",
+                    "5. Put filter and cap on top of Aeropress. ",
+                    "6. (1:30) Turbulent wiggle and flip Aeropress onto a mug.",
+                    "7. Press down on Aeropress until you hear a 'hiss' to indicate the water has been drained",
+                    "8. Pour 100g of hot water into the mug to dilute."]
   },
   {
     "id": "4",
     "name": "Kalita Wave",
     "image": "https://cdn.shopify.com/s/files/1/0635/8741/products/Kalita_Wave_Kettle_Dripper_2048x_249e2b11-ddc6-481e-956b-59ef262e3a88_1024x1024.jpeg?v=1532971619",
-    "description": "",
-    "instructions": ""
+    "description": "Flat-bottomed brewer",
+    "instructions": ["1. Heat up 300g of water to 198°F",
+                    "2. Coarsely grind 20g of coffee beans.",
+                    "3. Pre-wet the coffee filter with hot water.",
+                    "4. Pour coffee grounds into filter and level the bed.",
+                    "5. (45sec) Pour 50g of water onto grounds and let bloom.",
+                    "6. (0:45) Pour 160g of water onto grounds.",
+                    "7. (1:15) Pour 130g of water onto grounds and give the dripper a gentle spin to get grounds off the sides of filter.",
+                    "8. Let drain and then enjoy."]
   },
   {
     "id": "5",
     "name": "French Press",
     "image": "https://fitfoodiefinds.com/wp-content/uploads/2019/05/french-press-6-sq.jpg",
-    "description": "",
+    "description": "Immersion brewer",
     "instructions": ""
   },
   {
     "id": "6",
     "name": "Clever Dripper",
     "image": "https://essense.coffee/wp-content/uploads/2020/03/Klever1.jpg",
-    "description": "",
-    "instructions": ""
+    "description": "Immersion brewer",
+    "instructions": ["1. Heat up 300g of water to 200°F",
+                    "2. Coarsely grind 20g of coffee beans",
+                    "3. Pour 300g of water over grounds",
+                    "4. Cover Clever and let steep for 2 to 3 minutes (depending on how bold you want your cup to be). ",
+                    "5. After 2 to 3 minutes, open cover and give slurry a gentle stir.",
+                    "6. Set Clever on top of a mug to drain."],
+    "source": "Scott Rao"
   },
   {
     "id": "7",
     "name": "Cold Brew",
     "image": "https://coolhunting.com/wp-content/uploads/2018/06/large-40-1200x1200.jpg",
-    "description": "",
+    "description": "Immersion brewer",
     "instructions": ""
   },
   {

@@ -119,7 +119,7 @@ function Notes({
           <h2>Saved Notes</h2>
         </div>
         <div id='addNoteBtn' className='row justify-content-center'>
-          <button type="button" className="btn btn-success btn-lg" onClick={newNote}>Add new entry</button>
+          <button type="button" className="btn btn-light btn-lg" onClick={newNote}>Add new entry</button>
         </div>
       </div>
       }
