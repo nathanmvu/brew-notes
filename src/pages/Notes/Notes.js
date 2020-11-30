@@ -94,7 +94,6 @@ function Notes({
               <h5>{new Date(createdAt || '').toDateString()}</h5>
               <h6>{title}</h6>
               <p>Method: {method}</p>
-              {/* <a href='#' type='button' className='stretched-link' data-toggle='modal' data-target='#noteModal' /> */}
             </div>
             <div>
               <div className='btn-group'>

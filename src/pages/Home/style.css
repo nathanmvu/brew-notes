@@ -4,67 +4,28 @@
   -moz-animation: fadeIn ease 5s;
   -o-animation: fadeIn ease 5s;
   -ms-animation: fadeIn ease 5s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
 }
+
 @keyframes fadeIn {
+  to {
+    visibility: visible;
+  }
   0% {
     opacity:0;
   }
   100% {
     opacity:1;
   }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-.first-text {
-  animation-name: fadeIn;
-  animation-duration: 3s;
 }
 
 .second-text {
-  animation-name: fadeIn;
   animation-delay: 3s;
-  animation-duration: 3s;
 }
 
 .third-text {
-  animation-name: fadeIn;
-  animation-delay: 3s;
-  animation-duration: 3s;
+  animation-delay: 6s;
 }
 
 .center {
