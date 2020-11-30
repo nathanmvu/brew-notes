@@ -4,10 +4,11 @@ const Schema = mongoose.Schema;
 
 const NoteSchema = new Schema({
   createdAt: {
-    type: Date
+    type: Date,
+    required: true
   },
   userID: {
-    type: Number,
+    type: String,
     required: true
   },
   title: { 
@@ -33,6 +34,9 @@ const NoteSchema = new Schema({
   description: { 
     type: String, 
     required: true 
+  },
+  favorite: {
+    type: Boolean
   }
 });
 
