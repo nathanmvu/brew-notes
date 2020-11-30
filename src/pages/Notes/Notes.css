@@ -1,3 +1,8 @@
 .card {
   margin-top: 20px;
 }
+
+.card-body {
+  margin-left: 10px;
+  margin-right: 10px;
+}

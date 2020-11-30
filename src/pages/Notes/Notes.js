@@ -89,14 +89,14 @@ function Notes({
     return (
       <div className="card" onClick={() => editNote(note)} key={createdAt}>
         <div className="card-body">
-          <div className='row'>
-            <div className='col-md-8'>
+          <div className='row justify-content-between'>
+            <div>
               <h5>{new Date(createdAt || '').toDateString()}</h5>
               <h6>{title}</h6>
               <p>Method: {method}</p>
               {/* <a href='#' type='button' className='stretched-link' data-toggle='modal' data-target='#noteModal' /> */}
             </div>
-            <div className='col-md-4'>
+            <div>
               <div className='btn-group'>
                 <button type="button" className={favorite ? "btn btn-success" : "btn btn-outline-success"} onClick={(e) => favoriteNote(e, note)}>Favorite</button>
                 <button type="button" className="btn btn-outline-danger" onClick={(e) => deleteNote(e, note)}>Delete</button>

@@ -50,9 +50,21 @@
   }
 }
 
-h2 {
+.first-text {
   animation-name: fadeIn;
-  animation-duration: 5s;
+  animation-duration: 3s;
+}
+
+.second-text {
+  animation-name: fadeIn;
+  animation-delay: 3s;
+  animation-duration: 3s;
+}
+
+.third-text {
+  animation-name: fadeIn;
+  animation-delay: 3s;
+  animation-duration: 3s;
 }
 
 .center {
