@@ -10,7 +10,7 @@ import Guides from './pages/Guides';
 import Notes from './pages/Notes/Notes';
 
 function App() {
-  const [username, setUsername] = useState(null);
+  const [userID, setUserID] = useState(null);
   const [loggedIn, setLoggedIn] = useState(false);
 
   function getUser() {
@@ -20,11 +20,12 @@ function App() {
       if (response.data.user) {
         console.log('Get User: There is a user saved in the server session: ')
 
-        setUsername(response.data.user.username);
+        setUserID(response.data.user._id);
+        console.log('user ID', response.data.user._id);
         setLoggedIn(true);
       } else {
         console.log('Get user: no user');
-        setUsername(null);
+        setUserID(null);
         setLoggedIn(false);
         if (!window.location.href.includes('login')) {
           window.location.href = '/login';
@@ -45,7 +46,7 @@ function App() {
         <Route exact path='/login' component={Login} />
         <Route exact path='/home' component={Home} />
         <Route exact path='/guides' component={Guides} />
-        <Route exact path='/notes' component={Notes} username={username} />
+        <Route exact path='/notes' component={Notes} userID={userID} />
       </Switch>
     </Router>
   );
