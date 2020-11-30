@@ -5,10 +5,10 @@ import './Cards.css'
 function Cards() {
   return (
     <div className='container'>
-      <div className="d-flex justify-content-center">
+      <div className='d-flex justify-content-center'>
         <h3>Popular Brew Methods</h3>
       </div>
-      <div className='row'>
+      <div className='row d-flex justify-content-center'>
         {methods.map(method => 
         <div key={method.id} className="card-deck">
           <div className='card'>
