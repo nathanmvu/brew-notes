@@ -109,7 +109,20 @@ function Notes({
 
   return (
     <div className='container'>
-      {favoritesPage ? null : <button type="button" className="btn btn-success btn-lg" onClick={newNote}>Add new entry</button>}
+      {favoritesPage ? 
+      <div className='row justify-content-center'>
+        <h2>Favorites</h2>
+      </div>
+       : 
+      <div>
+        <div className='row justify-content-center'>
+          <h2>Saved Notes</h2>
+        </div>
+        <div className='row'>
+          <button type="button" className="btn btn-success btn-lg" onClick={newNote}>Add new entry</button>
+        </div>
+      </div>
+      }
       {notes.map(renderNote)}
       <NoteModal {...modalProps} closeModal={closeModal} />
     </div>

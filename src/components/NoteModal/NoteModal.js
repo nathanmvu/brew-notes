@@ -85,13 +85,13 @@ function Notes(props) {
           </div>
           <div className="modal-body">
             <form id='noteForm'>
-              <div className="form-group6">
+              <div className="form-group">
                 <label htmlFor="title">Title</label>
                 <input type="text" className="form-control" id="noteTitle" placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} />
               </div>
               <div className="form-row">
                 <div className="form-group col-md-6">
-                  <label htmlFor="title">Method</label>
+                  <label htmlFor="method">Method</label>
                   <select id="text" className="form-control" value={method} onChange={(e) => setMethod(e.target.value)}>
                     <option selected>Choose...</option>
                     <option>V60</option>
@@ -106,7 +106,7 @@ function Notes(props) {
                   </select>
                 </div>
                 <div className="form-group col-md-6">
-                  <label htmlFor="inputPassword4">Beans</label>
+                  <label htmlFor="beans">Beans</label>
                   <input type="text" className="form-control" id="inputPassword4" placeholder="Roaster/Origin" value={beans} onChange={(e) => setBeans(e.target.value)}/>
                 </div>
               </div>
@@ -125,7 +125,7 @@ function Notes(props) {
                 </div>
               </div>
               <div className="form-group">
-                <label htmlFor="exampleFormControlTextarea1">Description</label>
+                <label htmlFor="description">Description</label>
                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter notes here..." value={description} onChange={(e) => setDesc(e.target.value)}></textarea>
               </div>
             </form>
