@@ -2,8 +2,6 @@ const User = require('../models/User');
 var passport = require('../utils/passport.js');
 
 module.exports = function (app) {
-  console.log('in userapiroutes');
-
   app.post('/', function(req, res) {
     const { username, password } = req.body
     User.findOne({ username: username }, (err, user) => {
