@@ -5,11 +5,13 @@ const app = express();
 const mongoose = require("mongoose");
 // const routes = require('./routes')
 const passport = require('passport');
+const session = require('express-session')
 // const user = require('./routes/userApiRoutes');
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(session({ secret: 'keyboard cat' }));
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {

@@ -22,6 +22,8 @@ function Login() {
           console.log(res)
           if(res.data) {
             console.log('successful login');
+            window.location.reload();
+            window.location.href = '/home';
           }
         })
         .catch(err => {

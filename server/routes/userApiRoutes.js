@@ -28,6 +28,11 @@ module.exports = function (app) {
   })
 
   app.post('/api/user/login',
+    function (req, res, next) {
+      console.log('routes/user.js, login, req.body: ');
+      console.log(req.body)
+      next()
+   },
     passport.authenticate('local'),
     (req, res) => {
         console.log('logged in', req.user);
@@ -44,13 +49,15 @@ module.exports = function (app) {
       email: req.body.email,
       password: req.body.password,
     }).then(dbUser => {
+      console.log('usercreate dbuser', dbUser);
       res.json(dbUser);
     }).catch(err => {
+      console.log('usercreate error', err);
       res.send(err)
     });
   });
 
-  app.get('/', (req, res, next) => {
+  app.get('/api/user', (req, res, next) => {
     console.log('===== user!!======')
     console.log(req.user)
     if (req.user) {
@@ -60,10 +67,13 @@ module.exports = function (app) {
     }
 })
 
-  app.get('/logout', function (req, res) {
+  app.post('/api/user/logout', function (req, res) {
+    console.log('in logout');
     if (req.user) {
-      req.logout();
-      res.redirect('/');
+      req.logout()
+      res.send({ msg: 'logging out' })
+    } else {
+      res.send({ msg: 'no user to log out' })
     }
   });
 };

@@ -9,23 +9,29 @@ passport.use(
       usernameField: 'email',
     },
     function (email, password, done) {
+      console.log('passport-local');
+      User.find().then(console.log);
       User.findOne({
-        where: {
           email: email,
-        },
-      }).then(function (err, user) {
+          password: password,
+      }, function (err, user) {
+        console.log('passport-local(then)');
+        console.log('err',err);
+        console.log('user',user);
         if (err) {
+          console.log(err);
           return done(err)
         }
         if (!user) {
           return done(null, false, {
-            message: 'Invalid email.',
-          });
-        } else if (!user.validPassword(password)) {
-          return done(null, false, {
-            message: 'Invalid password.',
+            message: 'Invalid email or password.',
           });
         }
+        // } else if (!user.checkPassword(password)) {
+        //   return done(null, false, {
+        //     message: 'Invalid password.',
+        //   });
+        // }
         return done(null, user);
       });
     }
