@@ -45,7 +45,7 @@ function App() {
         <Route exact path='/login' component={Login} />
         <Route exact path='/home' component={Home} />
         <Route exact path='/guides' component={Guides} />
-        <Route exact path='/notes' component={Notes} />
+        <Route exact path='/notes' component={Notes} username={username} />
       </Switch>
     </Router>
   );

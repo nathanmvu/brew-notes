@@ -3,54 +3,51 @@ import React from 'react';
 
 function Form() {
   return (
-    <div className='container'>
+    <div>
       <form>
-        <h3>BrewNote:</h3>
-        <br></br>
-        <div className="form-row">
-          <div className="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" className="form-control" id="inputEmail4" placeholder="Email" />
-          </div>
-          <div className="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
-            <input type="password" className="form-control" id="inputPassword4" placeholder="Password" />
-          </div>
-        </div>
-        <div className="form-group">
-          <label for="inputAddress">Address</label>
-          <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St" />
-        </div>
-        <div className="form-group">
-          <label for="inputAddress2">Address 2</label>
-          <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
+        <div className="form-group6">
+          <label for="title">Title</label>
+          <input type="text" className="form-control" id="noteTitle" placeholder="Title" />
         </div>
         <div className="form-row">
           <div className="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" className="form-control" id="inputCity" />
-          </div>
-          <div className="form-group col-md-4">
-            <label for="inputState">State</label>
-            <select id="inputState" className="form-control">
+            <label for="title">Method</label>
+            <select id="text" className="form-control">
               <option selected>Choose...</option>
-              <option>...</option>
+              <option>V60</option>
+              <option>Chemex</option>
+              <option>Aeropress</option>
+              <option>Kalita Wave</option>
+              <option>French Press</option>
+              <option>Clever Dripper</option>
+              <option>Cold Brew</option>
+              <option>Siphon</option>
+              <option>Moka Pot</option>
             </select>
           </div>
-          <div className="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" className="form-control" id="inputZip" />
+          <div className="form-group col-md-6">
+            <label for="inputPassword4">Beans</label>
+            <input type="text" className="form-control" id="inputPassword4" placeholder="Roaster/Name" />
           </div>
         </div>
-        <div className="form-group">
-          <div className="form-check">
-            <input className="form-check-input" type="checkbox" id="gridCheck" />
-            <label className="form-check-label" for="gridCheck">
-              Check me out
-            </label>
+        <div className="form-row">
+          <div className="form-group col-md-4">
+            <label for="grindSize">Grind Size</label>
+            <input type="text" className="form-control" id="grindSize" placeholder="Coarse" />
+          </div>
+          <div className="form-group col-md-4">
+            <label for="temp">Temperature</label>
+            <input type="text" className="form-control" id="temp" placeholder="200F" />
+          </div>
+          <div className="form-group col-md-4">
+            <label for="time">Total Time</label>
+            <input type="text" className="form-control" id="time" placeholder="1:45" />
           </div>
         </div>
-        <button type="submit" className="btn btn-primary">Sign in</button>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Description</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter notes here..."></textarea>
+        </div>
       </form>
     </div>
   )
