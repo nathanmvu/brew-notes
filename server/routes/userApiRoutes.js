@@ -38,6 +38,7 @@ module.exports = function (app) {
             username: req.user.username
         };
         res.send(userInfo);
+        res.redirect('/home');
     }
   );
 

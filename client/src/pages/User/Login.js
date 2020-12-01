@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import axios from 'axios';
 import './Signup.css';
 
@@ -24,7 +24,7 @@ function Login() {
           if(res.data) {
             console.log('successful login');
             window.location.reload();
-            window.location.href = '/home';
+            window.location.replace('/home');
           }
         })
         .catch(err => {
