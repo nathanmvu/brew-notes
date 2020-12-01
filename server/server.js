@@ -16,7 +16,7 @@ app.use(session({ secret: 'keyboard cat' }));
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+  app.use(express.static("index.html"));
 }
 
 // Passport
