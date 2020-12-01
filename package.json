@@ -28,12 +28,12 @@
     "react-scripts": "4.0.1"
   },
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run dev",
-    "start:prod": "node server/server.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "dev": "concurrently \"react-scripts start\" \"nodemon server/server.js\"",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
