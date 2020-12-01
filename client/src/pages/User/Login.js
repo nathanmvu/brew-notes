@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './Signup.css';
 
@@ -53,7 +54,7 @@ function Login() {
         </div>
         <div className='d-flex justify-content-between'>
           <button type='button' className="btn btn-primary signUpButton" onClick={handleClick}>Log in</button>
-          <p className='mt-2'>or sign up <a href='/'>here</a></p>
+          <p className='mt-2'>or sign up <Link to='/'>here</Link></p>
         </div>
       </form>
     </div>

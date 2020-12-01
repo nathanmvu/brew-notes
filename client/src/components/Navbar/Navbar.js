@@ -23,9 +23,9 @@ function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-md navbar-dark">
       <h1>
-        <a href='/home' id='nameBadge' className="navbar-brand ml-5 text-light">
+        <Link to='/home' id='nameBadge' className="navbar-brand ml-5 text-light">
           BrewNotes☕
-        </a>
+        </Link>
       </h1>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
