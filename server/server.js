@@ -23,7 +23,7 @@ require('./utils/passport');
 require('./routes/userApiRoutes')(app, passport);
 require('./routes/noteApiRoutes')(app);
 
-app.get('/*', function (req, res) {
+app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
