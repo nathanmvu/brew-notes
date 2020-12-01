@@ -43,16 +43,29 @@ module.exports = function (app) {
 
   app.post('/api/user', function (req, res) {
     console.log('signup', req.body);
-    User.create({
-      email: req.body.email,
-      password: req.body.password,
-    }).then(dbUser => {
-      console.log('usercreate dbuser', dbUser);
-      res.json(dbUser);
-    }).catch(err => {
-      console.log('usercreate error', err);
-      res.send(err)
-    });
+    const { email, password } = req.body
+    console.log('email', email);
+    User.findOne({ email: email }, (err, user) => {
+      if (err) {
+          console.log('User post error: ', err)
+      } else if (user) {
+          res.json({
+              error: `Sorry, already a user with that email`
+          })
+      }
+      else {
+        User.create({
+          email: email,
+          password: password,
+        }).then(dbUser => {
+          console.log('usercreate dbuser', dbUser);
+          res.json(dbUser);
+        }).catch(err => {
+          console.log('usercreate error', err);
+          res.send(err);
+        });
+      }
+    })
   });
 
   app.get('/api/user', (req, res, next) => {

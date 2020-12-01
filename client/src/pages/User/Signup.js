@@ -17,8 +17,23 @@ function Signup() {
         password: password
       }
       axios.post('/api/user', user)
-        .then(res => console.log(res))
-        .catch(err => console.log(err));
+        .then(res => {
+          console.log(res);
+          if(!res.data.message && !res.data.error) {
+            console.log('Successfully created!');
+            window.location.href = '/login';
+          } else {
+            if(res.data.message) {
+              alert(res.data.message);
+            } else {
+              alert(res.data.error);
+            }
+          } 
+        })
+        .catch(err => {
+          console.log(err);
+          console.log('Failed to create user');
+        });
     } else {
       alert('Password is invalid');
     }
@@ -52,8 +67,10 @@ function Signup() {
           <i className='text-danger'>minimum 6 chars</i> 
           : null}
         </div>
-        <button type='button' className="btn btn-light" onClick={handleClick}>Sign up</button>
-        <p className='ml-2'>or log in <a href='/login'>here</a></p>
+        <div className='d-flex justify-content-between'>
+          <button type='button' className="btn btn-primary signUpButton" onClick={handleClick}>Sign up</button>
+          <p className='mt-2'>or log in <a href='/login'>here</a></p>
+        </div>
       </form>
     </div>
   )
