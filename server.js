@@ -14,6 +14,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(session({ secret: 'keyboard cat' }));
 
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+
 // Passport
 app.use(passport.initialize())
 app.use(passport.session()) // calls the deserializeUser
@@ -22,14 +27,6 @@ app.use(passport.session()) // calls the deserializeUser
 require('./server/utils/passport');
 require('./server/routes/userApiRoutes')(app, passport);
 require('./server/routes/noteApiRoutes')(app);
-
-// Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("build"));
-  app.get('*', function (req, res) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-  });
-}
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/brewnotes");
 
