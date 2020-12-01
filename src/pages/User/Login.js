@@ -51,9 +51,9 @@ function Login() {
           <i className='text-danger'>minimum 6 chars</i> 
           : null}
         </div>
-        <div className='d-flex justify-content-center'>
-          <button type='button' className="btn btn-light signUpButton" onClick={handleClick}>Log in</button>
-          <p className='ml-2'>or sign up <a href='/'>here</a></p>
+        <div className='d-flex justify-content-between'>
+          <button type='button' className="btn btn-primary signUpButton" onClick={handleClick}>Log in</button>
+          <p className='mt-2'>or sign up <a href='/'>here</a></p>
         </div>
       </form>
     </div>

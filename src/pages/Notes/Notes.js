@@ -92,12 +92,12 @@ function Notes({
             <div>
               <h5>{new Date(createdAt || '').toDateString()}</h5>
               <h6>{title}</h6>
-              <p>Brewed with: {method}</p>
+              <p>Method: {method}</p>
             </div>
             <div>
               <div className='btn-group'>
                 <button type="button" className={favorite ? "btn btn-success" : "btn btn-outline-success"} onClick={(e) => favoriteNote(e, note)}>Favorite</button>
-                <button type="button" className="btn btn-outline-danger" onClick={(e) => deleteNote(e, note)}>Delete</button>
+                <button type="button" className="btn btn-outline-danger" onClick={(e) => deleteNote(e, note)}>x</button>
               </div>
             </div>
           </div>
@@ -118,7 +118,7 @@ function Notes({
           <h2>Saved Notes</h2>
         </div>
         <div id='addNoteBtn' className='row justify-content-center'>
-          <button type="button" className="btn btn-light btn-lg" onClick={newNote}>Add new entry</button>
+          <button type="button" className="btn btn-secondary btn-lg" onClick={newNote}>Add new entry</button>
         </div>
       </div>
       }
