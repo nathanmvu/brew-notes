@@ -25,12 +25,13 @@
     "react-scripts": "4.0.1"
   },
   "scripts": {
-    "temp": "if-env NODE_ENV=production && npm run start:dev",
-    "start": "react-scripts start",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run dev",
+    "start:prod": "nodemon server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "concurrently \"react-scripts start\" \"nodemon server/server.js\""
+    "dev": "concurrently \"react-scripts start\" \"nodemon server/server.js\"",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": [
