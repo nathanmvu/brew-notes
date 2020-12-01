@@ -27,7 +27,8 @@ function App() {
         console.log('Get user: no user');
         setUserID(null);
         setLoggedIn(false);
-        if (!window.location.href.includes('login')) {
+        console.log(window.location.pathname);
+        if (window.location.pathname !== '/' && window.location.pathname !== '/login') {
           window.location.href = '/login';
         }
       }

@@ -29,7 +29,7 @@
   },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run dev",
-    "start:prod": "nodemon server/server.js",
+    "start:prod": "node server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
