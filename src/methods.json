@@ -6,11 +6,13 @@
     "description": "Cone-shaped brewer",
     "instructions": ["1. Heat up 300g of water to 198°F",
                      "2. Coarsely grind 20g of coffee beans",
-                     "3. (45sec) Pour 50g of water onto the ground and let bloom.",
-                     "4. (0:45) Pour 70g of water onto the grounds.",
-                     "5. (1:30) Pour 60g of water onto the grounds.",
-                     "6. (2:15) Pour 60g of water onto the grounds.",
-                     "7. (3:30) Finished. Take coffee dripper off of cup."],
+                     "3. Place filter into dripper and pre-wet with hot water over a mug",
+                     "3. Pour coffee grounds into filter.",
+                     "4. (45sec) Pour 50g of water onto the ground and let bloom.",
+                     "5. (0:45) Pour 70g of water onto the grounds.",
+                     "6. (1:30) Pour 60g of water onto the grounds.",
+                     "7. (2:15) Pour 60g of water onto the grounds.",
+                     "8. (3:30) Finished. Take coffee dripper off of cup."],
     "source": "Tetsu Kasuya's 4:6 Method"
                      
   },
@@ -19,14 +21,18 @@
     "name": "Chemex",
     "image": "https://essense.coffee/wp-content/uploads/2019/07/CHEMEX-six-classic_04.jpg",
     "description": "Cone-shaped brewer",
-    "instructions": ["1. Heat up 300g of water to 198°F",
-                    "2. Coarsely grind 20g of coffee beans",
-                    "3. (45sec) Pour 50g of water onto the ground and let bloom.",
-                    "4. (0:45) Pour 70g of water onto the grounds.",
-                    "5. (1:30) Pour 60g of water onto the grounds.",
-                    "6. (2:15) Pour 60g of water onto the grounds.",
-                    "7. (3:30) Finished. Take coffee dripper off of cup."],
-    "source": "Reddit"
+    "instructions": ["(Recipe for 1 person, double recipe quantities for 2)",
+                    "1. Heat up 225g of water to 205°F",
+                    "2. Grind 15g of coffee beans to medium coarseness",
+                    "3. Place the three folds of the filter against the spout and single fold on the opposite side. Pre-heat the vessel and rinse off the paper taste by slowly pouring hot water around the filter.",
+                    "4. Gently pull back the filter near the spout to empty the hot water. Place the filter back and add the ground coffee. Place the Chemex on the scale, then tare.",
+                    "5. Start your timer then slowly pour hot water over the coffee, making sure to saturate thoroughly until you reach 50 grams.",
+                    "6. When the timer reaches 40 seconds, start your second pour in a slow, circular motion until you reach 115 grams.",
+                    "7. When the water is at the coffee grounds, start your third pour in a slow, circular motion until you reach 175 grams.",
+                    "8. When the water is at the coffee grounds again, continue with your final pour in a slow, circular motion until you reach 225 grams.",
+                    "9. When the timer reaches about 3:30 - 4 minutes, you're ready to enjoy. Remove the coffee filter, grab your favorite mug, and enjoy!"],
+    "source": "Verve",
+    "sourceLink": "https://www.vervecoffee.com/blogs/the-verve-blog/how-to-brew-at-home-chemex"
   },
   {
     "id": "3",
@@ -41,7 +47,9 @@
                     "5. Put filter and cap on top of Aeropress. ",
                     "6. (1:30) Turbulent wiggle and flip Aeropress onto a mug.",
                     "7. Press down on Aeropress until you hear a 'hiss' to indicate the water has been drained",
-                    "8. Pour 100g of hot water into the mug to dilute."]
+                    "8. Pour 100g of hot water into the mug to dilute."],
+    "source": "My Recipe! (Slightly modified version of a World Aeropress Championship recipe)",
+    "sourceLink": "https://aeropress.com/championships/wac-recipes/"
   },
   {
     "id": "4",
@@ -56,7 +64,8 @@
                     "6. (0:45) Pour 160g of water onto grounds.",
                     "7. (1:15) Pour 130g of water onto grounds and give the dripper a gentle spin to get grounds off the sides of filter.",
                     "8. Let drain and then enjoy."],
-    "source": "Scott Rao"
+    "source": "Scott Rao",
+    "sourceLink": "https://www.youtube.com/watch?v=BjsGf3R9mc0"
   },
   {
     "id": "5",
@@ -71,7 +80,8 @@
                     "6. Let sit and brew for atleast another 5 minutes.",
                     "7. Gently push down strainer to the surface of the coffee.",
                     "7. Pour and enjoy."],
-    "source": "James Hoffman"
+    "source": "James Hoffman",
+    "sourceLink": "https://www.youtube.com/watch?v=st571DYYTR8&feature=youtu.be"
   },
   {
     "id": "6",
@@ -84,32 +94,51 @@
                     "4. Cover Clever and let steep for 2 to 3 minutes (depending on how bold you want your cup to be). ",
                     "5. After 2 to 3 minutes, open cover and give slurry a gentle stir.",
                     "6. Set Clever on top of a mug to drain."],
-    "source": "Scott Rao"
+    "source": "Scott Rao",
+    "sourceLink": "https://www.scottrao.com/blog/2016/10/8/some-observations-on-hand-pours"
   },
   {
     "id": "7",
     "name": "Cold Brew",
     "image": "https://coolhunting.com/wp-content/uploads/2018/06/large-40-1200x1200.jpg",
     "description": "Immersion brewer",
-    "instructions": ["1. Heat up 300g of water to 200°F",
-                    "2. Coarsely grind 20g of coffee beans",
-                    "3. Pour 300g of water over grounds",
-                    "4. Cover Clever and let steep for 2 to 3 minutes (depending on how bold you want your cup to be). ",
-                    "5. After 2 to 3 minutes, open cover and give slurry a gentle stir.",
-                    "6. Set Clever on top of a mug to drain."]
+    "instructions": ["(Using any sealable container)",
+                    "1. Use a 4:1 ratio of coffee grounds to water",
+                    "2. Pour water onto grounds.",
+                    "3. Seal container and let sit at room temperature for a day",
+                    "4. Filter/take out grounds and refridgerate.",
+                    "5. Dilute cold brew concentrate with a 1:1 ratio with water or milk"],
+    "source": "Reddit",
+    "sourceLink": "https://www.reddit.com/r/Coffee/comments/4h4wlq/what_is_your_personal_cold_brew_recipe/d2niw9n?utm_source=share&utm_medium=web2x&context=3"
   },
   {
     "id": "8",
     "name": "Siphon",
     "image": "https://cdn11.bigcommerce.com/s-6h7ychjk4/images/stencil/1280x1280/products/8411/90399/hario-tabletop-coffee-siphon__95640.1597184239.jpg?c=1&imbypass=on",
-    "description": "",
-    "instructions": ""
+    "description": "Immersion brewer",
+    "instructions": ["1. Heat up 567g of water to 195°F to 205°F",
+                    "2. Grind 34g of coffee beans to medium-fine coarseness",
+                    "3. Fill bottom globe with pre-heated water and place over flame. (Let top globe rest on bottom glove but do not fit them together too tightly)",
+                    "4. When water in bottom globe begins to boil, tightly fit top globe onto bottom globe",
+                    "5. As water transfers to top glove, stir to cool water. Turn down burner aiming for 200°F without letting water transfer back to bottom globe",
+                    "6. Pour fresh ground coffee into top globe and stir to saturate all grounds. Let steep for 1-2 minutes.",
+                    "7. After steep time has passed, stir grounds again and remove flame to begin vacuum filtering",
+                    "8. Filtering is finished when coffee in bottom globe bubbles"],
+    "source": "Specialty Coffee Association Of America",
+    "sourceLink": "https://imgur.com/a/YtAn9"
   },
   {
     "id": "9",
     "name": "Moka Pot",
     "image": "https://cdn.shopify.com/s/files/1/0734/9587/files/brew-moka-pot_grande.jpg?6204",
-    "description": "",
-    "instructions": ""
+    "description": "Immersion brewer",
+    "instructions": ["1. Boil water and fill bottom half of Moka pot.",
+                    "2. Finely grind 20-22g of coffee beans (almost as fine as espresso grounds)",
+                    "3. Fill pot's filter basket with ground coffee and shake to level the bed. Place into bottom compartment.",
+                    "4. Screw on Moka pot's spouted top. (Caution! Bottom chamber will be hot.)",
+                    "5. Place Moka pot onstove set to medium heat.",
+                    "6. When the water in the bottom chamber approaches a boil, the pressure will push a stream of coffee slowly and methodically through the upper chamber. If it explodes upward, your water’s too hot, if it burbles lethargically, turn up your flame. You know it’s done when you hear a hissing, bubbling sound."],
+    "source": "Blue Bottle Coffee",
+    "sourceLink": "https://bluebottlecoffee.com/preparation-guides/bialetti-moka-pot"
   }
 ]

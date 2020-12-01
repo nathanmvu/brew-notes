@@ -12,7 +12,9 @@ function CardModal(props) {
       name: name,
       image: image,
       description: description,
-      instructions: instructions
+      instructions: instructions,
+      source: source,
+      sourceLink: sourceLink
     } = card;
   }
 
@@ -26,20 +28,28 @@ function CardModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Recommended Brew Guide
+          Recommended Brewing Recipe
         </Modal.Title>
       </Modal.Header>
       {isOpen ?
       <Modal.Body className='body'>
         <h4 className='bodyHead'>{card?.name}</h4>
-        <h6 className='bodyDesc'>{card?.description}</h6>
-        <br></br>
+        <h6 className='bodyDesc'>({card?.description})</h6>
+        <hr></hr>
         <p className='instructionHead'>Instructions:</p>
         {card.instructions.map(instruction => (
           <p key={instruction.id}>
             {instruction}
           </p>
         ))}
+        <br></br>
+        <p>
+          <small class="font-italic text-muted">
+            <a href={card?.sourceLink} target='_blank'>
+              Source: {card?.source}
+            </a>
+          </small>
+        </p>
       </Modal.Body>
       : null}
       <Modal.Footer>
