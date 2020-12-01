@@ -7,7 +7,6 @@ import NoteModal from '../../components/NoteModal/NoteModal';
 function Notes({
   favoritesPage,
 }) {
-  // const { userID } = props; // TODO: this
 
   const [notes, setNotes] = useState([]);
   const [modalProps, setModalProps] = useState({
@@ -93,7 +92,7 @@ function Notes({
             <div>
               <h5>{new Date(createdAt || '').toDateString()}</h5>
               <h6>{title}</h6>
-              <p>Method: {method}</p>
+              <p>Brewed with: {method}</p>
             </div>
             <div>
               <div className='btn-group'>

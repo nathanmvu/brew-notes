@@ -5,7 +5,8 @@ import CardModal from '../CardModal/CardModal';
 
 function Cards() {
   const [modalProps, setModalProps] = useState({
-    card: null
+    card: null,
+    isOpen: false
   });
 
   const [modalShow, setModalShow] = React.useState(false);
@@ -14,7 +15,8 @@ function Cards() {
     console.log('clicked guide', card);
     setModalShow(true)
     setModalProps({
-      card
+      card,
+      isOpen: true
     });
   }
 

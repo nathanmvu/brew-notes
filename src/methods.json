@@ -55,14 +55,23 @@
                     "5. (45sec) Pour 50g of water onto grounds and let bloom.",
                     "6. (0:45) Pour 160g of water onto grounds.",
                     "7. (1:15) Pour 130g of water onto grounds and give the dripper a gentle spin to get grounds off the sides of filter.",
-                    "8. Let drain and then enjoy."]
+                    "8. Let drain and then enjoy."],
+    "source": "Scott Rao"
   },
   {
     "id": "5",
     "name": "French Press",
     "image": "https://fitfoodiefinds.com/wp-content/uploads/2019/05/french-press-6-sq.jpg",
     "description": "Immersion brewer",
-    "instructions": ""
+    "instructions": ["1. Heat up 500g of water to 200°F",
+                    "2. Grind 30g of coffee beans to medium coarseness.",
+                    "3. Pour grounds and water into press.",
+                    "4. Let it sit and brew for 4 minutes.",
+                    "5. Stir the crust of the brew and scoop the residual top layer of foam out.",
+                    "6. Let sit and brew for atleast another 5 minutes.",
+                    "7. Gently push down strainer to the surface of the coffee.",
+                    "7. Pour and enjoy."],
+    "source": "James Hoffman"
   },
   {
     "id": "6",
@@ -82,7 +91,12 @@
     "name": "Cold Brew",
     "image": "https://coolhunting.com/wp-content/uploads/2018/06/large-40-1200x1200.jpg",
     "description": "Immersion brewer",
-    "instructions": ""
+    "instructions": ["1. Heat up 300g of water to 200°F",
+                    "2. Coarsely grind 20g of coffee beans",
+                    "3. Pour 300g of water over grounds",
+                    "4. Cover Clever and let steep for 2 to 3 minutes (depending on how bold you want your cup to be). ",
+                    "5. After 2 to 3 minutes, open cover and give slurry a gentle stir.",
+                    "6. Set Clever on top of a mug to drain."]
   },
   {
     "id": "8",
