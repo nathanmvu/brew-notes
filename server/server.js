@@ -16,7 +16,7 @@ app.use(session({ secret: 'keyboard cat' }));
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("index.html"));
+  app.use(express.static("client/build"));
 }
 
 // Passport
@@ -27,6 +27,10 @@ app.use(passport.session()) // calls the deserializeUser
 require('./utils/passport');
 require('./routes/userApiRoutes')(app, passport);
 require('./routes/noteApiRoutes')(app);
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve('public', 'index.html'));
+});
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/brewnotes");
 
