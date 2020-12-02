@@ -1,5 +1,5 @@
 # BrewNotes
-A curated resource coffee brewing methods and a note-taking application for coffee-enthusiasts.
+A curated resource of coffee brewing methods, recipes, and a note-taking application for coffee-enthusiasts.
 
 ## Description
 This was a personal project to address a desire I had to have a simple way to log and keep track of the cups of coffee that I was brewing everyday. After signing up and logging in users are able to click on cards in the guides section to view recommended recipes for different brewing methods and also take notes on their coffee (method, beans used, grind size, brew temperature, time, extra notes). Adding a note works by entering information into the input form regarding brew details and then saving the note will generate a new section on the note page pertaining to the newly saved note. Editing notes works by clicking on the note you wish to edit and simply changing the information within the note and clicking to the save the note. Notes can also be favorited and compiled to the favorites page for quick access to favorite notes or deleted.
