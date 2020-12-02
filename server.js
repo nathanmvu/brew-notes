@@ -28,6 +28,10 @@ require('./server/utils/passport');
 require('./server/routes/userApiRoutes')(app, passport);
 require('./server/routes/noteApiRoutes')(app);
 
+app.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
+
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/brewnotes");
 
 app.listen(PORT, () => {
