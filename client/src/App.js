@@ -29,7 +29,7 @@ function App() {
         setLoggedIn(false);
         console.log(window.location.pathname);
         if (window.location.pathname !== '/' && window.location.pathname !== '/login') {
-          window.location.replace('/login');
+          window.location.href = '/login';
         }
       }
     });

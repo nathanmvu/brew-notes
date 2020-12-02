@@ -24,7 +24,7 @@ function Login() {
           if(res.data) {
             console.log('successful login');
             window.location.reload();
-            window.location.replace('/home');
+            window.location.href = '/home';
           }
         })
         .catch(err => {
@@ -53,7 +53,7 @@ function Login() {
           : null}
         </div>
         <div className='d-flex justify-content-between'>
-          <button type='button' className="btn btn-primary signUpButton" onClick={handleClick}>Log in</button>
+          <button type='button' className="btn btn-primary" onClick={handleClick}>Log in</button>
           <p className='mt-2'>or sign up <Link to='/'>here</Link></p>
         </div>
       </form>

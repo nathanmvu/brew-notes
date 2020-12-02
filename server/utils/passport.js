@@ -15,9 +15,7 @@ passport.use(
           email: email,
           password: password,
       }, function (err, user) {
-        // console.log('passport-local(then)');
-        // console.log('err',err);
-        // console.log('user',user);
+
         if (err) {
           console.log(err);
           return done(err)
@@ -27,11 +25,7 @@ passport.use(
             message: 'Invalid email or password.',
           });
         }
-        // } else if (!user.checkPassword(password)) {
-        //   return done(null, false, {
-        //     message: 'Invalid password.',
-        //   });
-        // }
+
         return done(null, user);
       });
     }

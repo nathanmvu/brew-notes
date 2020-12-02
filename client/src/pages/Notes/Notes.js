@@ -16,7 +16,6 @@ function Notes({
   });
 
   function loadNotes() {
-    console.log('load notes, favorite:', favoritesPage);
     API.getAllNotes(favoritesPage)
       .then((res) => {
         if (res.data.notes) {
@@ -39,7 +38,6 @@ function Notes({
   function favoriteNote(e, note) {
     e.preventDefault();
     e.stopPropagation();
-    console.log('favorite', note);
     API.updateNote(note._id, {
       favorite: !note.favorite,
     })
@@ -51,7 +49,6 @@ function Notes({
   function deleteNote(e, note) {
     e.preventDefault();
     e.stopPropagation();
-    console.log('delete', note);
     API.deleteNote(note._id)
     .then(res => console.log(res))
     .catch(err => console.log(err))
