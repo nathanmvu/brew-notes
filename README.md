@@ -93,7 +93,7 @@ function Notes({
 * [React-Bootstrap](https://react-bootstrap.github.io/)
 
 ## Author
-* Nathan Vu
+Nathan Vu
 * [Github](https://github.com/nathanmvu)
 * [Email](mailto:nathanvu99@gmail.com)
 
