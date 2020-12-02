@@ -16,10 +16,8 @@ This was a personal project to address a desire I had to have a simple way to lo
 * [Deployed Link](https://brewnotes.herokuapp.com/)
 * [Usage Demo Video](https://drive.google.com/file/d/1xFScKjhdxmcCBwr5CxhvDfLU9La1qZeU/view)
 
-Demo of guides:
+* Demo of guides and notes:
 ![Guides Demo GIF](./assets/demo1.gif)
-
-Demo of notes:
 ![Notes Demo GIF](./assets/demo2.gif)
 
 ## Installation
