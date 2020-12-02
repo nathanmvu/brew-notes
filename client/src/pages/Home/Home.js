@@ -8,7 +8,9 @@ function Home() {
       <br></br>
       <h1 className='fade-in second-text'>Welcome to BrewNotes! ☕</h1>
       <br></br>
-      <h2 className='fade-in third-text'>This website is a resource for coffee brewing methods and a place where coffee enthusiasts can log information about their brews.</h2>
+      <h2 className='fade-in third-text'>
+        This website is a resource for coffee brewing methods and a place where coffee enthusiasts can log information about their brews.
+      </h2>
     </div>
   )
 }
