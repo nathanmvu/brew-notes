@@ -30,7 +30,7 @@ function App() {
         console.log(window.location.pathname);
         if (window.location.pathname !== '/' && window.location.pathname !== '/login') {
           window.location.reload();
-          window.location.href = '/login';
+          window.location.replace('/login');
         }
       }
     });

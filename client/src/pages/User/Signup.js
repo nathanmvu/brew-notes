@@ -23,7 +23,7 @@ function Signup() {
           if(!res.data.message && !res.data.error) {
             console.log('Successfully created!');
             window.location.reload();
-            window.location.href = '/login';
+            window.location.replace('/login');
           } else {
             if(res.data.message) {
               alert(res.data.message);

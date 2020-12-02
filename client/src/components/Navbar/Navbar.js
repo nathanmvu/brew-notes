@@ -13,6 +13,7 @@ function Navbar(props) {
       if (response.status === 200) {
         loggedIn = false;
         window.location.reload()
+        window.location.replace('/login');
       }
     }).catch(error => {
       console.log(error);

@@ -24,7 +24,7 @@ function Login() {
           if(res.data) {
             console.log('successful login');
             window.location.reload();
-            window.location.href = '/home';
+            window.location.replace('/home');
           }
         })
         .catch(err => {
