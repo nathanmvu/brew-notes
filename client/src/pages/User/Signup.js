@@ -22,6 +22,8 @@ function Signup() {
           console.log(res);
           if(!res.data.message && !res.data.error) {
             console.log('Successfully created!');
+            window.location.reload();
+            window.location.href = '/login';
           } else {
             if(res.data.message) {
               alert(res.data.message);
