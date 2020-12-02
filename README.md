@@ -8,6 +8,7 @@ This was a personal project to address a desire I had to have a simple way to lo
 * [Getting Started](#getting-started)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Technologies Used](#technologies-used)
 * [Author](#author)
 * [License](#license)
 
@@ -16,7 +17,7 @@ This was a personal project to address a desire I had to have a simple way to lo
 * [Deployed Link](https://brewnotes.herokuapp.com/)
 * [Usage Demo Video](https://drive.google.com/file/d/1xFScKjhdxmcCBwr5CxhvDfLU9La1qZeU/view)
 
-* Demo of guides and notes:
+Demo of guides and notes:
 ![Guides Demo GIF](./assets/demo1.gif)
 ![Notes Demo GIF](./assets/demo2.gif)
 
@@ -80,6 +81,16 @@ function Notes({
     loadNotes();
   }
 ```
+
+## Technologies Used
+* [React](https://www.react.com/)
+* [MongoDB](https://www.mongodb.com/)
+* [Node.js](https://nodejs.org/en/)
+* [NPM](https://www.npmjs.com/)
+* [Axios](https://www.npmjs.com/package/axios/)
+* [Passport](http://www.passportjs.org/)
+* [Express](https://expressjs.com/)
+* [React-Bootstrap](https://react-bootstrap.github.io/)
 
 ## Author
 * Nathan Vu
